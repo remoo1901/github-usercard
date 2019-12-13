@@ -3,6 +3,12 @@
            https://api.github.com/users/<your name>
 */
 
+axios
+    .get('https://api.github.com/users/remoo1901')
+    .then(res => {
+      console.log(res);
+    }
+      )
 /* Step 2: Inspect and study the data coming back, this is YOUR 
    github info! You will need to understand the structure of this 
    data in order to use it to build your component function 
@@ -25,6 +31,24 @@
 */
 
 const followersArray = [];
+
+function githubCardCreator(user){
+
+   const cardDiv = document.createElement('div');
+   const userImg = document.createElement('img');
+   const userCardInfo = document.createElement('div');
+   const userName = document.createElement('h3');
+   const userUsersName = document.createElement('p');
+   const userLocation = document.createElement('p');
+   const userProfile = document.createElement('p');
+   const userAddress = document.createElement('a');
+   const userFollowers = document.createElement('p');
+   const userFollowing = document.createElement('p');
+   const userBio = document.createElement('p');
+
+
+
+}
 
 /* Step 3: Create a function that accepts a single object as its only argument,
           Using DOM methods and properties, create a component that will return the following DOM element:
